@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#e9f1e9">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>期末考试倒计时</title>
+  <title>开学倒计时</title>
   <!-- Bootstrap -->
   <link href="https://unpkg.zhimg.com/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -90,7 +90,7 @@
       <div class="container"><br>
         <p class="text-center" style="display: none" id="saying">“<i><span id="saying-text"></span></i>”</p><br>
         <div id="2333">
-          <h3 class="text-center" id="h">距离期末考试还有</h3>
+          <h3 class="text-center" id="h">距离开学还有</h3>
           <h1 class="text-center" id="day"></h1>
           <h2 class="text-center" id="p"></h2><br>
         </div>
@@ -113,7 +113,7 @@
     function getDate() {
       var oDate = new Date();//获取日期对象
       var oldTime = oDate.getTime();//现在距离1970年的毫秒数
-      var newDate = new Date('2022/12/29 00:00:00');
+      var newDate = new Date('2023/2/6 00:00:00');
       var newTime = newDate.getTime();//2023年高考离1970年的毫秒数
       var second = Math.floor((newTime - oldTime) / 1000);//未来时间距离现在的秒数
       var day = Math.floor(second / 86400);//整数部分代表的是天；一天有24*60*60=86400秒 ；
