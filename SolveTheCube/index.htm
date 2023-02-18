@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Beginner&#x27;s Guide | SolveTheCube</title>
+
+	<link rel="canonical" href="index.html">
+	<meta name="description" content="Learn how to solve a Rubik's Cube with the beginner's guide at SolveTheCube.com! The easy layer by layer method has algorithms and fun guaranteed!">
+
+	<meta property="og:title" content="SolveTheCube">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://solvethecube.com/">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:image" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:secure_url" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:width" content="590">
+	<meta property="og:image:height" content="310">
+	<meta property="og:description" content="Learn how to solve a Rubik's Cube with the beginner's guide at SolveTheCube.com! The easy layer by layer method has algorithms and fun guaranteed!">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="https://solvethecube.com/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#3d91b0">
+
+	<link rel="stylesheet" href="css/app.css">
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+	 		google_ad_client: "ca-pub-9188691407769749",
+			enable_page_level_ads: true
+		});
+	</script>
+
+	<script src="https://use.fontawesome.com/954f19bfd9.js"></script>
+</head>
+
+<body class="show-popup navbar-active">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVMFDR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVMFDR');</script>
+<!-- End Google Tag Manager -->
+
+<nav id="menu" class="animated">
+	<a id="menu-button" class="menu-button">
+		<div class="close">
+			<div></div>
+			<div></div>
+		</div>
+	</a>
+
+	<div class="menu-content">
+		<a class="logo" href="index.html">
+			<img src="img/logo.png" width="50" height="58" alt="SolveTheCube">
+		</a>
+
+		<ul>
+			<li><a href="index.html" class="active">Beginners</a></li>
+			<li><a href="speedcubing.htm" >Speedcubing</a></li>
+			<li><a href="algorithms.htm" >Algorithms</a></li>
+			<li><a href="timer.htm" >Timer</a></li>
+			<li><a href="notation.htm" >Notation</a></li>
+			<li><a href="faq.htm" >FAQ</a></li>
+			<li><a href="contact.htm" >Contact</a></li>
+		</ul>
+
+		<div class="menu-bottom">
+			<div class="addthis_sharing_toolbox"></div>
+
+			<div id="popup-toggle">
+				<span>Algorithm helper</span>
+
+				<div class="switch">
+					<input class="switch-input" id="popupSwitch" type="checkbox" name="popupSwitch" checked>
+					<label class="switch-paddle" for="popupSwitch">
+						<span class="show-for-sr">Toggle algorithm helper</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu-open"></div>
+</nav>
+
+<div id="menu-close"></div>
+
+<div class="body">
+
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="header">
+				<a id="header-menu-button" class="menu-button animated">
+					<div class="open">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="close">
+						<div></div>
+						<div></div>
+					</div>
+				</a>
+
+				<a class="header-logo" href="index.html">
+					<img src="img/title.png" width="600" height="125" alt="SolveTheCube">
+				</a>
+			</div>
+		</div>
+	</div>
+
+<div id="navbar">
+	<div class="line"></div>
+
+	<ul>
+		<li><a href="index.html#step1" title="The Cross"><img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxxxbxxbxxxx.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step2" title="The Corners"><img class="cube" src="img/cubes/wwwwwwwwwrrrxrxxxxbbbxbxxxx.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step3" title="The Second Layer"><img class="cube" src="img/cubes/xxxxyxxxxxxxbbbbbbxxxrrrrrr.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step4" title="The Last Layer Cross"><img class="cube" src="img/cubes/xyxyyyxyxxxxbbbbbbxxxrrrrrr.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step5" title="The Last Layer Edges"><img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxrxrrrrrr.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step6" title="The Last Layer Corners 1"><img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100"></a></li>
+		<li><a href="index.html#step7" title="The Last Layer Corners 2"><img class="cube" src="img/cubes/yyyyyyyyybbbbbbbbbrrrrrrrrr.png" width="100" height="100"></a></li>
+	</ul>
+</div>
+
+<div class="row">
+	<div class="small-12 columns">
+
+		<!-- <div class="callout primary">
+			<p>Welcome to the new SolveTheCube.com!</p>
+
+			<p>I've updated every page, checked every algorithm, and rewritten every guide to make them easier than ever to understand.</p>
+
+			<p>There are also some fun new features like a cubing timer and an algorithm helper, so you can <span class="show-for-small-only">tap</span><span class="show-for-medium">hover over</span> steps in an algorithm to see how each step is performed. You can then <span class="show-for-small-only">tap the image</span><span class="show-for-medium">press left or right on your keyboard</span> to move through the algorithm step by step!</p>
+
+			<p class="hide-for-large">You can also open the menu by swiping in from the left of the screen, and close it by swiping back again!</p>
+
+			<p>If you like the new version of the site, or have anything to say at all, you can leave a comment at the bottom of the page or <a href="/contact">send me an email</a>. I do very much enjoy hearing what you lovely people have to say!</p>
+
+			<p>Enjoy the site and happy cubing!<br><span>- Mark</span></p>
+		</div> -->
+
+		<h1>Beginner's Guide</h1>
+		<p>This beginner's guide will teach you how to solve the famous Rubik's Cube, even if you've never picked one up before! If you got given one for Christmas, found one in the dusty cupboard of an aging relative, or need to win a bet and soon, then read on to learn the method!</p>
+
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle banner-to-rectangle"
+		     style="display:block"
+		     data-ad-client="ca-pub-9188691407769749"
+		     data-ad-slot="7797180701"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<p>If you can already solve one, then why not head over to the <a href="speedcubing.htm">speedcubing page</a> and really step up your game. My personal record is 17.24 seconds - do you think you can beat it?</p>
+
+		<p>Let's begin!</p>
+
+
+		<section> <h2 id="step1">Step 1 - The Cross</h2>
+			<p>The first thing to do is to be aware of two facts:</p>
+
+			<ol>
+				<li>The centre pieces don't move.</li>
+				<li>The cube is solved layer by layer, not face by face.</li>
+			</ol>
+
+			<p>Well now you're aware of them, so that's a good start. But here's why they're important: because the centre pieces don't move, the face with a white sticker in the centre will always be the white face. You can test this quite easily by rotating any face of the cube - you can see that the centre pieces only ever rotate, and never move around in relation to each other. This is really very important, as it means that instead of trying to shuffle around the 54 stickers of the cube, you're actually only moving 20 pieces (8 corner pieces and 12 edge pieces). Just like how the centre piece of any face is always that colour, every piece will always have the same stickers on (unless you're the worst sort of cheater, but you wouldn't be reading this if you were).</p>
+
+			<p>Fact number 2 (that the cube is solved in layers) is a direct result of this. For example, because the white and red piece has a white sticker and a red sticker, whenever you use it to solve the white face, you are also starting to solve the red face. The same goes for the three other edge pieces and the four corner pieces that make up the white face. So whenever you solve the white face, you're actually solving the first few pieces of the four adjacent faces, aka the first layer, at the same time.</p>
+
+			<p>Without further ado then, and as you might have guessed from "Step 1 - The Cross" written in very big letters just up there, the first thing to do is to create a cross, like this:</p>
+
+			<img class="cube" src="img/cubes/xwxwwwxwxxrxxrxxxxxbxxbxxxx.png" width="100" height="100">
+
+			<p>Where the colours in the other faces correctly match up with the centre pieces of the same colour, and not like this:</p>
+
+			<img class="cube" src="img/cubes/xwxwwwxwxxbxxrxxxxxgxxbxxxx.png" width="100" height="100">
+
+			<p>where they don't. Any 'cubies' (the 20 pieces that make up the Rubik's Cube) that are grey can can just be ignored, as they are just cubies that aren't important yet.</p>
+
+			<p>You will also notice that the crosses here are white, a decision not made at random. Every single time you do the cube, you should start with white at the top so you get used to always looking out for the same colours at different stages. If I were to pick up a cube and start with, say, the green face, I would get terribly confused when it came to the last layer because I am so used to looking for yellow pieces instead of blue ones. Most other Rubik's Cube resources also start with the white face, so if you get used to it now you'll always know precisely what's going on.</p>
+
+			<p>Explaining exactly how to create this cross can be a little challenging, as it relies mostly on logic - I can't tell you exactly what moves to do, because your cube will be shuffled differently to mine. I heartily recommend you sit and devote some brain power to trying to work it out yourself, as both a mental exercise and a bit of fun. However, if you are struggling, or don't think this qualifies as fun, or perhaps if you're only here to learn to solve a Rubik's Cube as soon as possible in order to win a bet and aren't interested in whimsical things like fun, then here's what you should do in some specific situations:</p>
+
+			<div class="row">
+				<div class="small-12 medium-6 large-4 columns">
+					<div class="alg"><img src="img/cubes/xxxxwxxxxxxxxrwxxxxxxbbxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xxxxwwxxxxxxxrxxxxxbxxbxxxx">R</span></span></div>
+				</div>
+				<div class="small-12 medium-6 large-4 columns">
+					<div class="alg"><img src="img/cubes/xxxxwxxbxxwxxrxxxxxxxxbxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xxxxwxxxxxxxxrwxxxxxxbbxxxx">F</span>&nbsp;<span data-popup="xxxxwwxxxxxxxrxxxxxbxxbxxxx">R</span></span></div>
+				</div>
+				<div class="small-12 medium-6 large-4 columns end">
+					<div class="alg"><img src="img/cubes/xxxxwxxrxxwxxrxxxxxxxxbxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xxxxwxxxxxxxxrwxxxxxxrbxxxx">F</span>&nbsp;<span data-popup="xxxxwwxxxxxxxrxxxxxrxxbxxxx">R</span>&nbsp;<span data-popup="xxxxwxxwxxrxxrxxxxxxxxbxxxx">U</span></span></div>
+				</div>
+			</div>
+
+			<p>If you haven't already explored the <a href="notation.htm">notation page</a>, you might be slightly confused at the Rs, Fs, and Us lurking about next to the above images, but worry not! It's really rather simple - each letter denotes a face of the cube:</p>
+
+			<ul>
+				<li><strong>U</strong> for Up</li>
+				<li><strong>D</strong> for Down</li>
+				<li><strong>L</strong> for Left</li>
+				<li><strong>R</strong> for Right</li>
+				<li><strong>F</strong> for Front</li>
+				<li><strong>B</strong> for Back</li>
+			</ul>
+
+			<p>Each letter simply tells you to move that face clockwise by 90 degrees. An <strong>apostrophe</strong> after a letter (like <strong>F'</strong>, said 'anti-front') tells you to move that face anticlockwise instead, and <strong>2</strong> after a letter (like <strong>R2</strong>) tells you to move that face twice, so by 180 degrees. These letters are chained together in sequences called <strong>algorithms</strong>, so the algorithm F R U above is telling you to rotate the Front face clockwise by one turn of 90 degrees, the Right face clockwise one turn, and the Up face clockwise one turn.</p>
+
+			<p>Just remember that 'clockwise' can be different depending on how you're looking at something. Turning a face clockwise on the cube is always done as if you were looking directly at that face. If you ever need help with a step in an algorithm, you can <span class="show-for-small-only">touch</span><span class="show-for-medium">hover over</span> any step to see how it is performed. You can also look at the <a href="notation.htm">notation page</a> for an overview of the various notations used on this website.</p>
+
+			<p>A common situation to end up in is this:</p>
+
+			<img class="cube" src="img/cubes/xwxwwwxwxxbxxrxxxxxrxxbxxxx.png" width="100" height="100">
+
+			<p>Here, the blue and red edge pieces don't match up with the correct centre pieces. They can be swapped around without affecting the rest of the cross like so:</p>
+
+			<div class="alg"><img src="img/cubes/xwxwwwxwxxbxxrxxxxxrxxbxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwxxwxxbxxrwxxxxxxrbxxxx">R'</span>&nbsp;<span data-popup="xxxwwwxwxxgxxrwxxxxbxrbxxxx">U'</span>&nbsp;<span data-popup="xxxwwwxwxxgxxrxxxxxrxxbbxxx">R</span>&nbsp;<span data-popup="xwxwwxxwxxrxxrxxxxxxxxbbxxx">U</span>&nbsp;<span data-popup="xwxwwwxwxxrxxrxxxxxbxxbxxxx">R'</span></span></div>
+		</section>
+
+		<section> <h2 id="step2">Step 2 - The Corners</h2>
+			<p>The next step is to put the corners in, like this:</p>
+			<img class="cube" src="img/cubes/wwwwwwwwwrrrxrxxxxbbbxbxxxx.png" width="100" height="100">
+
+			<p>Just like the cross before, it is important that the corner pieces match with the pieces around it, i.e. not like this:</p>
+			<img class="cube" src="img/cubes/wwwwwwwwworgxrxxxxrboxbxxxx.png" width="100" height="100">
+
+			<p>It's likely that at least one white corner piece will be on the bottom layer. To correctly place such a corner, first put the cubie underneath where it needs to go (for example, the white-blue-red cubie should be underneath the white-blue-red corner). Then, depending on which of the three ways the white side of the cubie could be facing, use one of these algorithms:</p>
+
+			<div class="row">
+				<div class="small-12 large-4 columns">
+					<div class="alg"><img src="img/cubes/xwxwwwxwxxrxxrxxxwxbxxbxbxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwwxxxxxxxrrwxxxbxwbxxxx">F</span>&nbsp;<span data-popup="xwxwwwxxxxxxxrrxxrxbxwbxwxx">D</span>&nbsp;<span data-popup="xwxwwwxwwxrrxrxxxxbbxxbxxxx">F'</span></span></div>
+				</div>
+				<div class="small-12 large-4 columns">
+					<div class="alg"><img src="img/cubes/xwxwwwxwxxrxxrxxxrxbxxbxwxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwxxwxxrxxrwxxxxxxbbxxxw">R'</span>&nbsp;<span data-popup="xwxwwxxwxxrxxrwxxwxxxbbxbxx">D'</span>&nbsp;<span data-popup="xwxwwwxwwxrrxrxxxxbbxxbxxxx">R</span></span></div>
+				</div>
+				<div class="small-12 large-4 columns">
+					<div class="alg"><img src="img/cubes/xwxwwwxwxxrxxrxxxbxbxxbxrxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwxxwxxrxxrwxxxxxxbbxxxr">R'</span>&nbsp;<span data-popup="xwxwwxxwxxrxxrwxxxxxxbbxxxx">D</span>&nbsp;<span data-popup="xwxwwwxwxxrxxrxxxxxbxxbxxxx">R</span>&nbsp;<span data-popup="xwxwwwxxxxxxxrrxxxxbxwbxxxx">F</span>&nbsp;<span data-popup="xwxwwwxxxxxxxrrxxrxbxwbxwxx">D2</span>&nbsp;<span data-popup="xwxwwwxwwxrrxrxxxxbbxxbxxxx">F'</span></span></div>
+				</div>
+			</div>
+
+			<p>The algorithms for taking a corner from the bottom layer and putting it into the top layer are relatively simple, so you should do these cases first. This also has the added benefit of displacing any incorrectly placed white corners in the top layer. Look at this example:</p>
+
+			<img class="cube" src="img/cubes/xwxwwwxwwxroxrxxxxgbxxbxxxx.png" width="100" height="100">
+
+			<p>You can see that the white-orange-green piece is clearly in the wrong place, so you might you think that you should solve that one first. In fact, you should solve the white-blue-red first (using the above algorithms) because it will displace the white-orange-green into the bottom layer, which you can then solve as normal. Thinking about the order in which you do things like this will help to reduce the amount of work you have to do, and therefore take less time and make the whole process that much more enjoyable.</p>
+
+			<p>If, as in the previous example, the white-red-blue piece is also in the top layer, you can bring it down to the bottom layer by using the above algorithms. You simply put some other piece in its place, like so:</p>
+
+			<div class="alg"><img src="img/cubes/xwxwwwwwbgbwxbxxxxroxxoxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwwxxoxxgxbbxxwwoxwoxbxx">F</span>&nbsp;<span data-popup="xwxwwwxxoxxgxbbxxxwoxwoxxxw">D</span>&nbsp;<span data-popup="xwxwwwwwxgbxxbxxxxxoxxoxxxw">F'</span></span></div>
+
+			<p>This puts the white-red-blue piece that you wanted in the bottom layer, so you can solve it as described before to bring the white-orange-green piece to the bottom layer, which can solved next.</p>
+
+			<p>The remaining case that you might run into is where the corner will be in the correct place in the top layer, but just needs reorienting. For example:</p>
+
+			<div class="alg"><img src="img/cubes/xwxwwwxwbxrwxrxxxxrbxxbxxxx.png" width="100" height="100"><span class="steps"><span data-popup="xwxwwxxwxxrxxrwxxbxxxbbxrxx">R'</span>&nbsp;<span data-popup="xwxwwxxwxxrxxrwxxxxxxbbxxxb">D</span>&nbsp;<span data-popup="xwxwwwxwxxrxxrxxxwxbxxbxbxx">R</span>&nbsp;<span data-popup="xwxwwwxxxxxxxrrwxxxbxwbxxxx">F</span>&nbsp;<span data-popup="xwxwwwxxxxxxxrrxxrxbxwbxwxx">D</span>&nbsp;<span data-popup="xwxwwwxwwxrrxrxxxxbbxxbxxxx">F'</span></span></div>
+
+			<p>You should be able see that this algorithm works in precisely the same way - it brings the cubie down into the bottom layer, then puts it back facing the right way.</p>
+		</section>
+
+		<section> <h2 id="step3">Step 3 - The Second Layer</h2>
+			<p>Now that the first layer is complete, it's on to the second layer:</p>
+
+			<img class="cube" src="img/cubes/xxxxyxxxxxxxbbbbbbxxxrrrrrr.png" width="100" height="100">
+
+			<p>Some of you will have noticed something very peculiar about this picture. If you haven't, I'll spoil it for you: the cube is now upside-down. This is the first thing to do when tackling the second layer, so you can see what you are doing. I'll give you a moment for you to go ahead and do that now.</p>
+
+			<p>Next, look in the top layer (which is now the layer with the yellow face) to find one of the second layer pieces that needs to be solved. In this case we'll do the the blue and red edge piece first. Turn the top layer until the piece forms an upside-down 'T' shape, which will be one of two possible colours depending on which way around the piece is:</p>
+
+			<img class="cube" src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="100" height="100">
+			<img class="cube" src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="100" height="100">
+
+			<p>It will now need to move either left or right into it's correct location, i.e. between the blue and red faces. Above, you can see that if you made a blue upside-down 'T', the piece needs to move to the right, and if you made a red 'T', it needs to move to the left. The two algorithms below for these situations are therefore the mirror image of each other, and, at eight steps apiece, they are the longest algorithms used in this guide.</p>
+
+			<div class="row">
+				<div class="small-12 large-6 columns">
+					<div class="alg"><img src="img/cubes/xxxxyxxrxxbxxbxbbbxxxxrxrrr.png" width="100" height="100"><span class="steps"><span data-popup="xxxryxxxxxxxxbxbbbxxxxrxrrr">U</span>&nbsp;<span data-popup="xxxryxxxbxxwxbwbbwrxxrrxrxx">R</span>&nbsp;<span data-popup="xxbxyxxrxxbxxbwbbwxxwrrxrxx">U'</span>&nbsp;<span data-popup="xxxxyxxrrxbbxbxbbxwxxxrxxrr">R'</span>&nbsp;<span data-popup="xxrxyrxxxxxxxbxbbxxbbxrxxrr">U'</span>&nbsp;<span data-popup="xxrxyrxxxxxxxbbxxbxbbwrxwrr">F'</span>&nbsp;<span data-popup="xxxxyxxrrxbbxbbxxbwxxwrxwrr">U</span>&nbsp;<span data-popup="xxxxyxxxxxxxxbbbbbxxxrrxrrr">F</span></span><p>Moves the top layer edge piece to the right</p></div>
+				</div>
+				<div class="small-12 large-6 columns">
+					<div class="alg"><img src="img/cubes/xxxxyxxbxxrxxrxrrrxxxxgxggg.png" width="100" height="100"><span class="steps"><span data-popup="xxxxybxxxxxxxrxrrrxrxxgxggg">U'</span>&nbsp;<span data-popup="xxxxybrxxwxxwrxwrrxrxxgxggg">L'</span>&nbsp;<span data-popup="rxxxyxxbxxrxwrxwrrxxxxgxggg">U</span>&nbsp;<span data-popup="xxxxyxbbxrrxxrxxrrxxxxgxggg">L</span>&nbsp;<span data-popup="bxxbyxxxxxxxxrxxrrxxxxgxggg">U</span>&nbsp;<span data-popup="bxxbyxxxxxxxrrxrxxxxxxgxxgg">F</span>&nbsp;<span data-popup="xxxxyxbbxrrxrrxrxxxxxxgxxgg">U'</span>&nbsp;<span data-popup="xxxxyxxxxxxxrrxrrrxxxxgxggg">F'</span></span><p>Moves the top layer edge piece to the left</p></div>
+				</div>
+			</div>
+
+			<p>Sometimes, the second layer is sneaky and will throw this sort of situation at you:</p>
+
+			<img class="cube" src="img/cubes/xyxyyoxyxxrxgbobbbxyxgrbrrr.png" width="100" height="100">
+
+			<p>Here, none of the second layer pieces are in the right places but you can't get to one of the above 'T' situations. To fix this, just go ahead and do one of the algorithms anyway. In the above picture, using the first algorithm on the yellow-red edge piece will displace the orange-green piece, causing it to move to the top layer like so:</p>
+
+			<div class="alg"><img src="img/cubes/xyxyyoxyxxrxgbobbbxyxgrbrrr.png" width="100" height="100"><span class="steps"><span data-popup="xyxyyyxoxxyxgbobbbxgxgrbrrr">U</span>&nbsp;<span data-popup="xyxyyoxobxywgbwbbwrgxrrgrbx">R</span>&nbsp;<span data-popup="xobyyoxyxxrxgbwbbwxywrrgrbx">U'</span>&nbsp;<span data-popup="xoxyyyxyrxrbgbobbxwgxyrbxrr">R'</span>&nbsp;<span data-popup="xyroyyxyxxbxgbobbxxrbyrbxrr">U'</span>&nbsp;<span data-popup="xyroyyxyxxoxbbbxgbxrbwrbwrr">F'</span>&nbsp;<span data-popup="xoxyyyxyrxrbbbbxgbwgxwrbwrr">U</span>&nbsp;<span data-popup="xoxyyyxyxxbxgbrbbbxgxyrbrrr">F</span></span></div>
+
+			<p>Now that the orange-green piece is in the top layer, you can solve it like normal by rotating the top layer until you find the green upside-down 'T'.</p>
+
+			<p>Sometimes, you may meet this situation:</p>
+
+			<img class="cube" src="img/cubes/xxxxyxxxxxxxxbrbbbxxxbrxrrr.png" width="100" height="100">
+
+			<p>You can solve this in exactly the same way, by using the normal algorithm on a yellow edge piece to displace the red-blue piece which can be solved as normal. Or, if you're feeling particularly clever, you can show it who's boss and see how it likes one of these:</p>
+
+			<div class="alg"><img src="img/cubes/xxxxyxxxxxxxxbrbbbxxxbrxrrr.png" width="100" height="100"><span class="steps"><span data-popup="xxxxyrxxbxxwxbwbbwrbxrrxrxx">R</span>&nbsp;<span data-popup="xrbxyxxxxxxxxbwbbwxxwrrxrxx">U'</span>&nbsp;<span data-popup="xrxxyxxxrxxbxbxbbxwxxxrxxrr">R'</span>&nbsp;<span data-popup="xxxxyrrxxwxxxbxbbxxbxxrxxrr">U</span>&nbsp;<span data-popup="xxxxyrxxxxxxxbbwxbxbxwrxwrr">F'</span>&nbsp;<span data-popup="xxxryxxxxxxxxbbwxbxxxwrxwrr">U2</span>&nbsp;<span data-popup="xxxryxrxxwxxxbxbbxxxxxrxxrr">F</span>&nbsp;<span data-popup="rrxxyxxxxxxxxbxbbxxxxxrxxrr">U</span>&nbsp;<span data-popup="rrxxyxxxxxxxxbbxxbxxxwrxwrr">F'</span>&nbsp;<span data-popup="xxxxyxxrrxbbxbbxxbwxxwrxwrr">U2</span>&nbsp;<span data-popup="xxxxyxxxxxxxxbbbbbxxxrrxrrr">F</span></span></div>
+		</section>
+
+		<section> <h2 id="step4">Step 4 - The Last Layer Cross</h2>
+			<p>As the name suggests, this stage consists of creating a cross on the last layer, like this:</p>
+
+			<img class="cube" src="img/cubes/xyxyyyxyxxxxbbbbbbxxxrrrrrr.png" width="100" height="100">
+
+			<p>This can't be done in the same way as the first cross (as you'd destroy everything you've worked so hard to do so far), so there are two small algorithms to learn.</p>
+
+			<p>Before you apply that algorithm, however, you need to identify which one of the following four situations you now find yourself in:</p>
+
+			<ol>
+				<li>
+					<p>Backwards L, for example:</p>
+				</li>
+				<div class="row no-cube-margin">
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xyxyyxxxxxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xyyyyxyxxxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center end">
+						<img class="cube" src="img/cubes/yyxyyxxxyxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+				</div>
+
+				<li>
+					<p>Line, for example:</p>
+				</li>
+				<div class="row no-cube-margin">
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xxxyyyxxxxyxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xxxyyyyxxxyxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center end">
+						<img class="cube" src="img/cubes/yxyyyyyxyxyxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+				</div>
+
+				<li>
+					<p>Dot, for example:</p>
+				</li>
+				<div class="row no-cube-margin">
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xxxxyxxxxxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xxyxyxxxxxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center end">
+						<img class="cube" src="img/cubes/yxyxyxyxyxyxbbbbbbxyxrrrrrr.png" width="100" height="100">
+					</div>
+				</div>
+
+				<li>
+					<p>Cross, for example:</p>
+				</li>
+				<div class="row no-cube-margin">
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xyxyyyxyxxxxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center">
+						<img class="cube" src="img/cubes/xyxyyyxyyxxxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+					<div class="small-4 medium-3 large-2 columns text-center end">
+						<img class="cube" src="img/cubes/yyyyyyxyxxxxbbbbbbxxxrrrrrr.png" width="100" height="100">
+					</div>
+				</div>
+			</ol>
+
+			<p>If you have a backwards L shape, then you need to make sure you hold the cube so that it is in the top left corner and apply the following algorithm:</p>
+			<div class="alg"><img src="img/cubes/xyxyyxxxxxyxbbbbbbxyxrrrrrr.png" width="100" height="100"><span class="steps"><span data-popup="xyxyyxooxbbxbbybbxxyxxrrxrr">F</span>&nbsp;<span data-popup="oyxoyyxxxxyxbbybbxxxxxrrxrr">U</span>&nbsp;<span data-popup="oyxoyyxxxxyxbbwbbwxxxrrxrrx">R</span>&nbsp;<span data-popup="xyxyyxooxbbxbbwbbwxyxrrxrrx">U'</span>&nbsp;<span data-popup="xyxyyyooxbbxbbxbbxxxxyrrxrr">R'</span>&nbsp;<span data-popup="xyxyyyxyxxxxbbbbbbxxxrrrrrr">F'</span></span></div>
+
+			<p>And if you have a line, then you need to hold the cube so it is horizontal and use this algorithm:
+
+			<div class="alg"><img src="img/cubes/xxxyyyxxxxyxbbbbbbxxxrrrrrr.png" width="100" height="100"><span class="steps"><span data-popup="xxxyyyooxbbxbbybbxxxxxrrxrr">F</span>&nbsp;<span data-popup="xxxyyyooxbbxbbwbbwxxxrrxrrx">R</span>&nbsp;<span data-popup="oyxoyxxyxxxxbbwbbwxyxrrxrrx">U</span>&nbsp;<span data-popup="oyxoyyxyxxxxbbxbbxxxxyrrxrr">R'</span>&nbsp;<span data-popup="xyxyyyooxbbxbbxbbxxxxyrrxrr">U'</span>&nbsp;<span data-popup="xyxyyyxyxxxxbbbbbbxxxrrrrrr">F'</span></span></div>
+
+			<p>If you have a dot, then you need to use both algorithms, in either order. Using the algorithm for the backwards L shape first will produce a line, which you can then solve with the line algorithm. The opposite happens if you use the line algorithm first - it produces the backwards L shape, which you can then solve using that algorithm. Either way, for both algorithms you need to first make sure that you are holding the cube in the right way - the line should always be horizontal and the backwards L should always be in the top left corner. If it isn't in the top left corner, it might be a different kind of L and I would have just typed the word backwards six times for no reason.</p>
+
+			<p>If you were lucky, you might have started in situation 4 and already have a cross. This means you can just skip forward to step 5!</p>
+
+			<p>If you were very unlucky, however, you might have ended up in secret situation number 5 and are looking at something like one of these:</p>
+
+			<img class="cube" src="img/cubes/xxxxyyxxxxyxbbbbbbxxxrrrrrr.png" width="100" height="100">
+			<img class="cube" src="img/cubes/xyxyyyxxxxyxbbbbbbxxxrrrrrr.png" width="100" height="100">
+
+			<p>This means that, regrettably, your cube can not be solved. At all. Really. There is no algorithm that can help you. But all is not lost. Look at <a href="faq.htm#q2">this answer on the FAQ page</a> to see what you should do next.</p>
+		</section>
+
+		<section> <h2 id="step5">Step 5 - The Last Layer Edges</h2>
+			<p>This step will move the edges of the cross you just created so they line up with the centres, like so:</p>
+
+			<img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxrxrrrrrr.png" width="100" height="100">
+
+			<p>First, you need to identify which edges need to be moved. Do this by turning the Up face until two of the edge pieces line up with the centre pieces of the same colour. The above picture shows this with the red and blue faces - the blue and red edge pieces in the top layer are next to their respective centre pieces. The remaining two edges that don't line up with their centers are the ones you're interested in, as they need to swap places.</p>
+
+			<p>There are three possibilities here:</p>
+
+			<ol>
+				<li>
+					<p>The two edges that need to be swapped are adjacent to each other:<br><em>(Cube shown from front and back)</em></p>
+				</li>
+
+				<img class="cube" src="img/cubes/xyxyyyxyxxrxbbbbbbxbxrrrrrr.png" width="100" height="100">
+				<img class="cube" src="img/cubes/xyxyyyxyxxgxggggggxoxoooooo.png" width="100" height="100">
+
+				<li>
+					<p>The two edges that need to be swapped are opposite each other:</p>
+				</li>
+
+				<img class="cube" src="img/cubes/xyxyyyxyxxgxbbbbbbxrxrrrrrr.png" width="100" height="100">
+				<img class="cube" src="img/cubes/xyxyyyxyxxbxggggggxoxoooooo.png" width="100" height="100">
+
+				<li>
+					<p>None of the edges need to be swapped:</p>
+				</li>
+
+				<img class="cube" src="img/cubes/xyxyyyxyxxbxbbbbbbxrxrrrrrr.png" width="100" height="100">
+				<img class="cube" src="img/cubes/xyxyyyxyxxgxggggggxoxoooooo.png" width="100" height="100">
+			</ol>
+
+			<p>In the first situation, where the two incorrect edges are adjacent to each other, the cube first needs to be rotated so that the two edges are in the Front and Right faces. In the example above, this is already the case so no rotation is needed. The algorithm can then be applied thusly:</p>
+
+			<div class="alg"><img src="img/cubes/xyxyyyxyxxrxbbbbbbxbxrrrrrr.png" width="100" height="100"><span class="steps"><span data-popup="xyxyyyxyxxbxbbbbbbxgxrrrrrr">U</span>&nbsp;<span data-popup="xyxyybxybxbwbbwbbwrrxrrgrrx">R</span>&nbsp;<span data-popup="xyxyyybbxrrxbbwbbwxoxrrgrrx">U</span>&nbsp;<span data-popup="xyxyyybbxrrxbbybbxxgxorrxrr">R'</span>&nbsp;<span data-popup="byxbyyxyxxgxbbybbxxrxorrxrr">U</span>&nbsp;<span data-popup="byxbyyxyxxgxbbwbbwxoxrrrrrx">R</span>&nbsp;<span data-popup="xyxyybxybxbwbbwbbwrrxrrrrrx">U2</span>&nbsp;<span data-popup="xyxyyyxyxxbxbbbbbbxrxrrrrrr">R'</span></span></div>
+
+			<p>In the second situation, you simply need to do the algorithm twice. Doing it the first time will make it so that the incorrect edges are now adjacent to each other, which you can solve exactly as the first situation. Remember to rotate the cube so that the incorrect edges are in the Front and Right faces!</p>
+
+			<p>As before, if you found yourself in last third situation you can just move straight on to step 6. Some of you might have even been lucky twice and skipped from step 3 all the way to step 6!</p>
+		</section>
+
+		<section> <h2 id="step6">Step 6 - The Last Layer Corners 1</h2>
+			<p>This step moves the corner pieces so that they are all in the right place, but not necessarily in the right orientation. So something like this:</p>
+
+			<img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100">
+
+			<p>First thing to do is to examine your cube and see if any of the corners in the top layer are already in the right place. Even though it isn't facing the right way, you should be able to see that red, blue, and yellow corner in the image above is in the correct place, as it is between the red, blue, and yellow faces. If there are any correct corners, there will either be only one or four. If they are all correct then you can merrily skip to the next step, but if there are only two or three correct, then you can merrily skip to <a href="faq.htm#q2">this FAQ answer</a> because, tragically, your cube is unsolvable.</p>
+
+			<p>You should be looking at a cube that looks something like this:</p>
+
+			<img class="cube" src="img/cubes/yyyyyygybrbrbbbbbbyrgrrrrrr.png" width="100" height="100">
+
+			<p>The blue-red-yellow corner in this image (the only corner in the correct place) is in a place on the cube imaginatively called the <strong>FRU corner</strong>. This is because it is the corner formed by the Front, Right, and Up faces. For this step, you need to turn the whole cube so that your correct corner (if you have one) is in the FRU corner before you do the algorithm. If you don't have any correct cubies, then it doesn't matter which cubie is in the FRU corner.</p>
+
+			<p>You can then perform this algorithm:</p>
+
+			<div class="alg"><img src="img/cubes/yyyyyygybrbrbbbbbbyrgrrrrrr.png" width="100" height="100"><span class="steps"><span data-popup="gyyyyybyyyrgbbbbbbogorrrrrr">U</span>&nbsp;<span data-popup="gygyybbybyrwbbwbbwrrorrgrro">R</span>&nbsp;<span data-popup="gbbyyygybrbrbbwbbwyrwrrgrro">U'</span>&nbsp;<span data-popup="rbbbyybybwbrwbwwbwyrwrrgrro">L'</span>&nbsp;<span data-popup="bbryybbybyrwwbwwbwrrgrrgrro">U</span>&nbsp;<span data-popup="bbyyyybyyyrrwbbwbbggorrrrrr">R'</span>&nbsp;<span data-popup="yyybyybybwbrwbbwbbyrrrrrrrr">U'</span>&nbsp;<span data-popup="gyyyyyoybybrbbbbbbyrrrrrrrr">L</span></span></div>
+
+			<p>The other corner cubies (not the one in the FRU corner) will have now changed around. This means that you will now certainly have at least one correctly positioned corner cubie. If you now only have one, do this step again, remembering to hold the correct cubie in the FRU corner. If you did have one correct corner to start with and the other corner cubies are still not all in the right place, you need to perform the algorithm one more time. This should mean that all the corners will now be in their correct places.</p>
+		</section>
+
+		<section> <h2 id="step7">Step 7 - The Last Layer Corners 2</h2>
+			<p>This is the last step! It will therefore result in the completed cube, which looks like this:</p>
+
+			<img class="cube" src="img/cubes/yyyyyyyyybbbbbbbbbrrrrrrrrr.png" width="100" height="100">
+
+			<p>Unlike the previous step where you needed to find a correct corner, the first thing to do here is find one of the corner cubies that is incorrect. As the goal of this step is to make all of the corners have the yellow side on top, thereby completing the yellow face and whole cube, an incorrect cubie is therefore one that does not have yellow on the top. You need to hold the cube so that one of the incorrect corners is in the FRU corner. I'm sure that you remember that this is the corner formed by the Front, Right, and Up faces. This should look something like this:</p>
+
+			<img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100">
+
+			<p>Here, you can see that there are three incorrect cubies, as three of them do not have yellow on top, and that one of these incorrect cubies is in the FRU corner. The way the yellow side of this corner is facing is important, as it could be one of two directions:</p>
+
+			<ol>
+				<li>Facing to the right, as in the above example:</li>
+				<img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100">
+
+				<li>Facing forwards, as in this different example:</li>
+				<img class="cube" src="img/cubes/oyyyyybyrobybbbbbbbrrrrrrrr.png" width="100" height="100">
+			</ol>
+
+			<p>Of course, it could also be facing up, but then it would not have counted as an incorrect cubie to begin with. The corners in these situations are solved using the following algorithms, but <strong>don't do them just quite yet!</strong></p>
+
+			<ul>
+				<li>(R' D' R D) (R' D' R D)</li>
+				<li>(R' D' R D) (R' D' R D) (R' D' R D) (R' D' R D)</li>
+			</ul>
+
+			<p>These algorithms require some explaining. Firstly, they have brackets in, which you've never seen before (in an algorithm, I know you've seen brackets before because I've used them a bunch of times. Like now!). They are only there to break the algorithm into chunks and make it easier to follow along, so they don't change the algorithm at all.</p>
+
+			<p>Secondly, the first algorithm is just R' D' R D twice and the second algorithm is just the first algorithm twice. This is precisely why the brackets are there, as both algorithms are just R' D' R D multiple times. In the second situation above, where the yellow side of the FRU cubie is facing forwards, the first two sets of R' D' R D in the algorithm brings you to the first situation - the yellow side moves from the front of the FRU corner to the right. You can then do the next two sets of R' D' R D to move it to the top, just like the first situation!</p>
+
+			<p>Now that you understand these algorithms, you can go ahead and use them. But be warned! While these algorithms do leave you with the yellow side facing up, they also leave the bottom two layers in a jumbled mess. This is normal, so <strong>don't panic!</strong></p>
+
+			<p>If your FRU cubie has its yellow side facing to the right, you use this algorithm:</p>
+
+			<div class="alg"><img src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100"><span class="steps">(<span class="no-margin-left"data-popup="gygyygoygybybbybbbrrrrrryrr">R'</span>&nbsp;<span data-popup="gygyygoygybybbyyrrrrrrrrwgg">D'</span>&nbsp;<span data-popup="gyyyyyoyrybbbbwyrwwrrgrrgrr">R</span>&nbsp;<span class="no-margin-right"data-popup="gyyyyyoyrybbbbwbbbwrrgrryrw">D</span>) (<span class="no-margin-left"data-popup="gygyygoygybybbybbrrrwrrrwgy">R'</span>&nbsp;<span data-popup="gygyygoygybybbywgyrrwrrrrrr">D'</span>&nbsp;<span data-popup="gyyyyyoyyybbbbwwgwrrrrrrrrw">R</span>&nbsp;<span class="no-margin-right"data-popup="gyyyyyoyyybbbbwbbrrrrrrrwgw">D</span>)</span></div>
+
+			<p>And if it is facing forward, you use exactly the same algorithm, but twice in a row:</p>
+
+			<div class="alg"><img src="img/cubes/oyyyyybyrobybbbbbbbrrrrrrrr.png" width="100" height="100"><span class="steps">(<span class="no-margin-left"data-popup="oygyygbygobybbybbrrrrrrrbrr">R'</span>&nbsp;<span data-popup="oygyygbygobybbybrrrrrrrrwgg">D'</span>&nbsp;<span data-popup="oyyyyybyrobbbbwbrwwrrgrrgrr">R</span>&nbsp;<span class="no-margin-right"data-popup="oyyyyybyrobbbbwbbrwrrgrrbrw">D</span>) (<span class="no-margin-left"data-popup="oygyygbygobybbybbrrrwrrrwgb">R'</span>&nbsp;<span data-popup="oygyygbygobybbywgbrrwrrryrr">D'</span>&nbsp;<span data-popup="oyyyyybybobrbbwwgwyrrrrrrrw">R</span>&nbsp;<span class="no-margin-right"data-popup="oyyyyybybobrbbwbbryrrrrrwgw">D</span>) (<span class="no-margin-left"data-popup="oyryygbygobybbybbbrrwrrgyrw">R'</span>&nbsp;<span data-popup="oyryygbygobybbyyrwrrwrrgbrw">D'</span>&nbsp;<span data-popup="oyyyyybywobrbbbyrobrrrrrwgw">R</span>&nbsp;<span class="no-margin-right"data-popup="oyyyyybywobrbbbbbbbrrrrryro">D</span>) (<span class="no-margin-left"data-popup="oywyygbygobybbybbwrrorrrbry">R'</span>&nbsp;<span data-popup="oywyygbygobybbybryrrorrrrgw">D'</span>&nbsp;<span data-popup="oyyyyybyyobbbbwbrgrrrgrrwro">R</span>&nbsp;<span class="no-margin-right"data-popup="oyyyyybyyobbbbwbbwrrrgrrbrg">D</span>)</span></div>
+
+			<p>The corner cubie should now happily be yellow side up, and the bottom layers should now appear unhappily scrambled. This will happen every time you use these algorithms, but they will sort themselves out very shortly.</p>
+
+			<p>Now for the next corner. Use <strong>either U or U'</strong> to move a new incorrect corner cubie into the FRU corner. The reason that bit is in bold is because it is tempting to move the whole cube instead. <strong>Do not do that.</strong></p>
+
+			<p>So here is what the process so far has looked like:</p>
+
+			<ol>
+				<li>
+					<p>We started off here, with an incorrect FRU corner:</p>
+				</li>
+
+				<img class="cube" src="img/cubes/gyyyyyoybybrbbbbbbyrrrrrrrr.png" width="100" height="100">
+
+				<li>
+					<p>We performed (R' D' R D) (R' D' R D) to make it correct:</p>
+				</li>
+
+				<img class="cube" src="img/cubes/gyyyyyoyyybbbbwbbrrrrrrrwgw.png" width="100" height="100">
+
+				<li>
+					<p>We then did a U' to move the next incorrect corner cubie into the FRU corner:</p>
+				</li>
+				<img class="cube" src="img/cubes/yyyyyygyoyobbbwbbrybbrrrwgw.png" width="100" height="100">
+			</ol>
+
+			<p>You solve this new incorrect cubie in exactly the same way as the previous one. Use the above algorithms again on your new incorrect FRU corner (depending, of course, on if the yellow side of this corner is facing forward or to the right) until the yellow side is facing upwards.</p>
+
+			<p>Then simply repeat the process. Use <strong>U or U'</strong> to move the next incorrect corner cubie into the FRU corner, and then use the algorithms again. Do try to not to worry about the bottom two layers being scrambled. I know it's a bit scary, but they are quite sensible and will resolve themselves when you're done.</p>
+
+			<p>Once you have done this on all the incorrect corner cubies, you will be only one turn away from completing the Rubik's Cube!</p>
+
+			<p>Congratulations!</p>
+
+			<h3>Example solve</h3>
+			<p>This step can cause a lot of trouble, especially because it appears to mess the whole cube up and it can be quite difficult to recognise when it's all gone horribly wrong. You can refer to <a href="faq.htm#q3">this FAQ answer</a> for some further help, and you can also use this exciting new interactive cube whatsit to see exactly how it's done on a completely different example!</p>
+
+			<div class="row">
+				<div class="small-10 small-centered medium-8 large-6 columns">
+
+					<div class="roofpig" data-config="colors=U:y D:w R:o L:r F:g B:b|hover=none|flags=showalg|speed=600|alg=R' D' R D R' D' R D U2 R' D' R D R' D' R D R' D' R D R' D' R D U2"></div>
+
+				</div>
+			</div>
+		</section>
+
+		<section> <h2>Now what?</h2>
+			<p>Well first, jolly well done on solving the cube. A lot of people don't get this far, so I'm proud of you, really. I hope you enjoyed following this guide as much as I did writing it. If you <em>really</em> enjoyed it, then I recommend to keep doing it! When I first solved the cube unaided, it took about six minutes and now I can do it in under 20 seconds because I didn't stop practising! You can see how you compare using the <a href="timer.htm">timer</a>.</p>
+
+			<p>Why not try the <a href="speedcubing.htm">speedcubing method</a> next? I could do the beginner's method in about 1:30 to 2 minutes before I started learning it, but you don't have to go that far. If you can consistently solve the cube and are looking to go even faster, give it a go!</p>
+		</section>
+
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-9188691407769749"
+		     data-ad-slot="7797180701"
+		     data-ad-format="auto"
+		     data-ad-format="horizontal"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</div>
+
+<div class="disqus">
+	<div class="row">
+		<div class="small-10 small-centered columns">
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				 */
+				/*
+				var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() {  // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+
+					s.src = '//solvethecube.disqus.com/embed.js';
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
+</div><div class="footer ">
+	<div class="row">
+		<div class="small-12 columns">
+
+			<img src="img/logo.png" width="40" height="46" alt="SolveTheCube">
+
+			<ul id="sitemap">
+				<li><a href="index.html">Beginners</a></li>
+				<li><a href="speedcubing.htm">Speedcubing</a></li>
+				<li><a href="algorithms.htm">Algorithms</a></li>
+				<li><a href="timer.htm">Timer</a></li>
+				<li><a href="notation.htm">Notation</a></li>
+				<li><a href="faq.htm">FAQ</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+
+			<div id="copyright">Copyright &copy; 2018 SolveTheCube.com</div>
+
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="topbutton">
+	<i class="fa fa-chevron-up"></i>
+</div>
+
+<div id="popup">
+	<span></span>
+	<img src="index.html" width="100" height="100">
+</div>
+
+<script src="js/commons.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5734f19e19fbb891"></script>
+
+<script src="js/roofpig.js"></script>
+
+</body>
+</html>
