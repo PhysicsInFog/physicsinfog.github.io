@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Notation | SolveTheCube</title>
+
+	<link rel="canonical" href="notation.htm">
+	<meta name="description" content="Confused by the D's, x's, and y's? Learn the easy notation for Rubik's Cube algorithms and test it out on virtual cubes!">
+
+	<meta property="og:title" content="SolveTheCube">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://solvethecube.com/notation/">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:image" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:secure_url" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:width" content="590">
+	<meta property="og:image:height" content="310">
+	<meta property="og:description" content="Confused by the D's, x's, and y's? Learn the easy notation for Rubik's Cube algorithms and test it out on virtual cubes!">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="https://solvethecube.com/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#3d91b0">
+
+	<link rel="stylesheet" href="css/app.css">
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+	 		google_ad_client: "ca-pub-9188691407769749",
+			enable_page_level_ads: true
+		});
+	</script>
+
+	<script src="https://use.fontawesome.com/954f19bfd9.js"></script>
+</head>
+
+<body class="show-popup">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVMFDR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVMFDR');</script>
+<!-- End Google Tag Manager -->
+
+<nav id="menu" class="animated">
+	<a id="menu-button" class="menu-button">
+		<div class="close">
+			<div></div>
+			<div></div>
+		</div>
+	</a>
+
+	<div class="menu-content">
+		<a class="logo" href="solvethecube_default_2.html">
+			<img src="img/logo.png" width="50" height="58" alt="SolveTheCube">
+		</a>
+
+		<ul>
+			<li><a href="solvethecube_default_2.html" >Beginners</a></li>
+			<li><a href="speedcubing.htm" >Speedcubing</a></li>
+			<li><a href="algorithms.htm" >Algorithms</a></li>
+			<li><a href="timer.htm" >Timer</a></li>
+			<li><a href="notation.htm" class="active">Notation</a></li>
+			<li><a href="faq.htm" >FAQ</a></li>
+			<li><a href="contact.htm" >Contact</a></li>
+		</ul>
+
+		<div class="menu-bottom">
+			<div class="addthis_sharing_toolbox"></div>
+
+			<div id="popup-toggle">
+				<span>Algorithm helper</span>
+
+				<div class="switch">
+					<input class="switch-input" id="popupSwitch" type="checkbox" name="popupSwitch" checked>
+					<label class="switch-paddle" for="popupSwitch">
+						<span class="show-for-sr">Toggle algorithm helper</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu-open"></div>
+</nav>
+
+<div id="menu-close"></div>
+
+<div class="body">
+
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="header">
+				<a id="header-menu-button" class="menu-button animated">
+					<div class="open">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="close">
+						<div></div>
+						<div></div>
+					</div>
+				</a>
+
+				<a class="header-logo" href="solvethecube_default_2.html">
+					<img src="img/title.png" width="600" height="125" alt="SolveTheCube">
+				</a>
+			</div>
+		</div>
+	</div>
+
+<div class="row notation-page">
+	<div class="small-12 columns">
+		<h1>Notation</h1>
+
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle hidden-to-rectangle"
+		     data-ad-client="ca-pub-9188691407769749"
+		     data-ad-slot="7797180701"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<p>In order to write down sequences of movements on the cube, we use a notation of six main letters:</p>
+
+		<ul>
+			<li><strong>U</strong> for Up</li>
+			<li><strong>D</strong> for Down</li>
+			<li><strong>L</strong> for Left</li>
+			<li><strong>R</strong> for Right</li>
+			<li><strong>F</strong> for Front</li>
+			<li><strong>B</strong> for Back</li>
+		</ul>
+
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle banner-only"
+		     data-ad-client="ca-pub-9188691407769749"
+		     data-ad-slot="7797180701"
+		     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+		<p>These letters are used in sequences known as <strong>algorithms</strong>, and you just perform each letter in the algorithm from left to right. Each letter simply tells you to move that face clockwise by 90 degrees. An <strong>apostrophe</strong> after a letter (like <strong>F'</strong>, said 'anti-front') tells you to move that face anticlockwise instead, and <strong>2</strong> after a letter (like <strong>R2</strong>) tells you to move that face by 180 degrees.<p>
+
+		<p>Here's an example for you:</p>
+		<div class="alg"><img src="img/cubes/wwwwwwwwwrrrrrrrrrbbbbbbbbb.png" width="100" height="100"><span class="steps"><span data-popup="wwwwwwyyyrrrrrrrrrgbbgbbgbb">F2</span>&nbsp;<span data-popup="yyywwwyyyrrrrrrrrrgbggbggbg">B2</span>&nbsp;<span data-popup="yyywwwyyyooorrrrrrbgbgbggbg">U2</span>&nbsp;<span data-popup="yyywwwyyyooorrrooobgbgbgbgb">D2</span>&nbsp;<span data-popup="wyyywwwyyrooorrroobgbgbgbgb">L2</span>&nbsp;<span data-popup="wywywywywrororororbgbgbgbgb">R2</span></span></div>
+
+		<p>If you managed to followed that correctly by turning each face of your cube twice, you should have achieved a rather charming checkerboard pattern. Use this simple algorithm to impress your friends and family!</p>
+
+		<p>You may have noticed that you could <span class="show-for-small-only">touch</span><span class="show-for-medium">hover over</span> each move in the algorithm to follow along at every step. If you're feeling a bit confident, you can turn this off using the 'Algorithm helper' switch at the bottom of the menu.</p>
+
+		<p>It is important to remember that <strong>each move should be done as if you were looking directly at the face that the move affects.</strong> U and D are clockwise turns for the Up and Down faces, but if you turn the top and bottom layers in the same way while looking at the Up face for both moves, you actually perform U and D'. Use this helpful array of buttons to see how each move affects a solved cube, so you can see how to perform them correctly.</p>
+
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="notation-buttons">
+					<div class="roofpig" data-config="colors=U:w D:y R:b L:g F:r B:o|hover=none"></div>
+
+					<div>
+						<a>U</a>
+						<a>D</a>
+						<a>L</a>
+						<a>R</a>
+						<a>F</a>
+						<a>B</a>
+					</div>
+					<div>
+						<a>U'</a>
+						<a>D'</a>
+						<a>L'</a>
+						<a>R'</a>
+						<a>F'</a>
+						<a>B'</a>
+					</div>
+					<div>
+						<a>U2</a>
+						<a>D2</a>
+						<a>L2</a>
+						<a>R2</a>
+						<a>F2</a>
+						<a>B2</a>
+					</div>
+
+					<button class="button">Reset</button>
+				</div>
+			</div>
+		</div>
+
+
+		<h2>Advanced Notation</h2>
+		<p>For the intermediate and advanced methods, other letters for notation will be used. These include:</p>
+
+		<ul>
+			<li><strong>x</strong> for rotating the cube like an R</li>
+			<li><strong>y</strong> for rotating the cube like a U</li>
+			<li><strong>z</strong> for rotating the cube like an F</li>
+			<li><strong>M</strong> for the layer between L and R</li>
+			<li><strong>E</strong> for the layer between U and D</li>
+			<li><strong>S</strong> for the layer between F and B</li>
+		</ul>
+
+		<p>E and S are used very rarely, as they are quite awkward to perform and can easily be replaced in algorithms with other turns.</p>
+
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="notation-buttons">
+					<div class="roofpig" data-config="colors=U:w D:y R:b L:g F:r B:o|hover=none"></div>
+
+					<div>
+						<a data-move="R>">x</a>
+						<a data-move="U>">y</a>
+						<a data-move="F>">z</a>
+						<a>M</a>
+						<a>E</a>
+						<a>S</a>
+					</div>
+					<div>
+						<a data-move="R<">x'</a>
+						<a data-move="U<">y'</a>
+						<a data-move="F<">z'</a>
+						<a>M'</a>
+						<a>E'</a>
+						<a>S'</a>
+					</div>
+					<div>
+						<a data-move="R>>">x2</a>
+						<a data-move="U>>">y2</a>
+						<a data-move="F>>">z2</a>
+						<a>M2</a>
+						<a>E2</a>
+						<a>S2</a>
+					</div>
+
+					<button class="button">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<p>There are also lower case letters for double layer turns, which mean to turn the normal face and the middle layer next to it at the same time.</p>
+
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="notation-buttons">
+					<div class="roofpig" data-config="colors=U:w D:y R:b L:g F:r B:o|hover=none"></div>
+
+					<div>
+						<a data-move="U+E'">u</a>
+						<a data-move="D+E">d</a>
+						<a data-move="L+M">l</a>
+						<a data-move="R+M'">r</a>
+						<a data-move="F+S">f</a>
+						<a data-move="B+S'">b</a>
+					</div>
+					<div>
+						<a data-move="U'+E">u'</a>
+						<a data-move="D'+E'">d'</a>
+						<a data-move="L'+M'">l'</a>
+						<a data-move="R'+M">r'</a>
+						<a data-move="F'+S'">f'</a>
+						<a data-move="B'+S">b'</a>
+					</div>
+					<div>
+						<a data-move="U2+E2'">u2</a>
+						<a data-move="D2+E2">d2</a>
+						<a data-move="L2+M2">l2</a>
+						<a data-move="R2+M2'">r2</a>
+						<a data-move="F2+S2">f2</a>
+						<a data-move="B2+S2'">b2</a>
+					</div>
+
+					<button class="button">Reset</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Responsive Ad -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-9188691407769749"
+		     data-ad-slot="7797180701"
+		     data-ad-format="auto"
+		     data-ad-format="horizontal"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
+</div>
+
+<div class="disqus">
+	<div class="row">
+		<div class="small-10 small-centered columns">
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				 */
+				/*
+				var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() {  // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+
+					s.src = '//solvethecube.disqus.com/embed.js';
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
+</div><div class="footer ">
+	<div class="row">
+		<div class="small-12 columns">
+
+			<img src="img/logo.png" width="40" height="46" alt="SolveTheCube">
+
+			<ul id="sitemap">
+				<li><a href="solvethecube_default_2.html">Beginners</a></li>
+				<li><a href="speedcubing.htm">Speedcubing</a></li>
+				<li><a href="algorithms.htm">Algorithms</a></li>
+				<li><a href="timer.htm">Timer</a></li>
+				<li><a href="notation.htm">Notation</a></li>
+				<li><a href="faq.htm">FAQ</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+
+			<div id="copyright">Copyright &copy; 2018 SolveTheCube.com</div>
+
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="topbutton">
+	<i class="fa fa-chevron-up"></i>
+</div>
+
+<div id="popup">
+	<span></span>
+	<img src="notation.htm" width="100" height="100">
+</div>
+
+<script src="js/commons.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5734f19e19fbb891"></script>
+
+<script src="js/roofpig.js"></script>
+
+</body>
+</html>

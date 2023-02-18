@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Timer | SolveTheCube</title>
+
+	<link rel="canonical" href="timer.htm">
+	<meta name="description" content="Use this fancy online Rubik's Cube timer for speedcubing! Record your times with automatic averages and see if you can beat your record!">
+
+	<meta property="og:title" content="SolveTheCube">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://solvethecube.com/timer/">
+	<meta property="og:locale" content="en_GB">
+	<meta property="og:image" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:secure_url" content="https://solvethecube.com/img/ogimage.png">
+	<meta property="og:image:width" content="590">
+	<meta property="og:image:height" content="310">
+	<meta property="og:description" content="Use this fancy online Rubik's Cube timer for speedcubing! Record your times with automatic averages and see if you can beat your record!">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="https://solvethecube.com/img/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#3d91b0">
+
+	<link rel="stylesheet" href="css/app.css">
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+	 		google_ad_client: "ca-pub-9188691407769749",
+			enable_page_level_ads: true
+		});
+	</script>
+
+	<script src="https://use.fontawesome.com/954f19bfd9.js"></script>
+</head>
+
+<body class="show-popup">
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MVMFDR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MVMFDR');</script>
+<!-- End Google Tag Manager -->
+
+<nav id="menu" class="animated">
+	<a id="menu-button" class="menu-button">
+		<div class="close">
+			<div></div>
+			<div></div>
+		</div>
+	</a>
+
+	<div class="menu-content">
+		<a class="logo" href="solvethecube_default_2.html">
+			<img src="img/logo.png" width="50" height="58" alt="SolveTheCube">
+		</a>
+
+		<ul>
+			<li><a href="solvethecube_default_2.html" >Beginners</a></li>
+			<li><a href="speedcubing.htm" >Speedcubing</a></li>
+			<li><a href="algorithms.htm" >Algorithms</a></li>
+			<li><a href="timer.htm" class="active">Timer</a></li>
+			<li><a href="notation.htm" >Notation</a></li>
+			<li><a href="faq.htm" >FAQ</a></li>
+			<li><a href="contact.htm" >Contact</a></li>
+		</ul>
+
+		<div class="menu-bottom">
+			<div class="addthis_sharing_toolbox"></div>
+
+			<div id="popup-toggle">
+				<span>Algorithm helper</span>
+
+				<div class="switch">
+					<input class="switch-input" id="popupSwitch" type="checkbox" name="popupSwitch" checked>
+					<label class="switch-paddle" for="popupSwitch">
+						<span class="show-for-sr">Toggle algorithm helper</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="menu-open"></div>
+</nav>
+
+<div id="menu-close"></div>
+
+<div class="body">
+
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="header">
+				<a id="header-menu-button" class="menu-button animated">
+					<div class="open">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="close">
+						<div></div>
+						<div></div>
+					</div>
+				</a>
+
+				<a class="header-logo" href="solvethecube_default_2.html">
+					<img src="img/title.png" width="600" height="125" alt="SolveTheCube">
+				</a>
+			</div>
+		</div>
+	</div>
+
+<div class="row">
+	<div class="small-12 columns">
+
+		<h1>Timer</h1>
+		<p>Simply touch the timer or press your <kbd>Spacebar</kbd> to start and stop! I'd recommend using 15 seconds inspection time, as that is what official Rubik's Cube competitions give you to look at the cube before starting your solve. And if we're going to care about official Rubik's Cube rules (who doesn't), then <a href="https://www.worldcubeassociation.org/regulations/#4d1">WCA regulation 4d1</a> says that cubes should be scrambled starting with the white face on top and the green face on the front.</p>
+
+		<div class="callout primary text-center">
+			Scramble: <span id="scramble"></span>
+		</div>
+
+		<div id="timer">
+			<div id="time-wrapper">
+				<span id="time">0<span class="colon">:</span>00<span class="small">00</span></span>
+				<i id="fullscreen" class="fa fa-arrows-alt" title="Toggle fullscreen mode"></i>
+			</div>
+
+			<div class="panel">
+				<h5 class="titlebox">Times</h5>
+
+				<div class="row collapse">
+					<div class="small-5 medium-4 medium-push-4 columns">
+						<div id="times">
+							<ol></ol>
+							<button id="cleartimes" class="button expanded">Clear times</button>
+						</div>
+					</div>
+
+					<div class="small-7 medium-4 medium-push-4 columns">
+						<table id="stats">
+							<tr>
+								<th>Average:</th>
+								<td id="average">&ndash;:&ndash;&ndash;.&ndash;&ndash;</td>
+							</tr>
+
+							<tr>
+								<th>Best:</th>
+								<td id="best">&ndash;:&ndash;&ndash;.&ndash;&ndash;</td>
+							</tr>
+							<tr>
+								<th>Worst:</th>
+								<td id="worst">&ndash;:&ndash;&ndash;.&ndash;&ndash;</td>
+							</tr>
+
+							<tr>
+								<th>
+									<span class="has-tip" title="Average of times with best and worst removed" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="1" >Trimmed Average:</span>
+								</th>
+								<td id="trimmed">&ndash;:&ndash;&ndash;.&ndash;&ndash;</td>
+							</tr>
+						</table>
+					</div>
+
+					<div class="small-12 medium-4 medium-pull-8 columns">
+						<div id="controls">
+							<div class="row">
+								<div class="small-6 medium-8 columns">
+									<label for="inspection">Inspection Time:</label>
+								</div>
+								<div class="small-6 medium-4 columns">
+									<select id="inspection">
+										<option value="0">0</option>
+										<option value="3">3</option>
+										<option value="5">5</option>
+										<option value="10">10</option>
+										<option value="15">15</option>
+									</select>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-6 medium-8 columns">
+									<label for="soundToggle">Play Sounds:</label>
+								</div>
+								<div class="small-6 medium-4 columns">
+									<div class="switch">
+										<input class="switch-input" id="soundToggle" type="checkbox" name="soundToggle" checked>
+										<label class="switch-paddle" for="soundToggle">
+											<span class="show-for-sr">Toggle timer sounds</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="disqus">
+	<div class="row">
+		<div class="small-10 small-centered columns">
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				 */
+				/*
+				var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+				*/
+				(function() {  // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+
+					s.src = '//solvethecube.disqus.com/embed.js';
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		</div>
+	</div>
+</div><div class="footer ">
+	<div class="row">
+		<div class="small-12 columns">
+
+			<img src="img/logo.png" width="40" height="46" alt="SolveTheCube">
+
+			<ul id="sitemap">
+				<li><a href="solvethecube_default_2.html">Beginners</a></li>
+				<li><a href="speedcubing.htm">Speedcubing</a></li>
+				<li><a href="algorithms.htm">Algorithms</a></li>
+				<li><a href="timer.htm">Timer</a></li>
+				<li><a href="notation.htm">Notation</a></li>
+				<li><a href="faq.htm">FAQ</a></li>
+				<li><a href="https://solvethecube.com/contact.htm">Contact</a></li>
+			</ul>
+
+			<div id="copyright">Copyright &copy; 2018 SolveTheCube.com</div>
+
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div id="topbutton">
+	<i class="fa fa-chevron-up"></i>
+</div>
+
+<div id="popup">
+	<span></span>
+	<img src="https://solvethecube.com/timer.htm" width="100" height="100">
+</div>
+
+<script src="js/commons.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="https://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5734f19e19fbb891"></script>
+
+</body>
+</html>
